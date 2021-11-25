@@ -11,7 +11,7 @@ const DetailScreen = ({route}) => {
     const [datos, setDatos]=useState([]);
 
     useEffect(()=>{
-        const apikey ='59f89d9269e7c7139bb2eeec2d5a7690';
+        const apikey ='';
         const api_url=`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly&appid=${apikey}&units=metric`
         fetch(api_url)
             .then(data => {
