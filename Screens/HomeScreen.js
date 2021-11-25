@@ -15,7 +15,7 @@ const HomeScreen = ({ navigation }) => {
   // Buscar el clima de la ciudad
   const buscar = (ciudad) => {
     
-    const key = '59f89d9269e7c7139bb2eeec2d5a7690';
+    const key = '';
     const api_url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${key}&units=metric`;
 
     if(ciudad == ""){
